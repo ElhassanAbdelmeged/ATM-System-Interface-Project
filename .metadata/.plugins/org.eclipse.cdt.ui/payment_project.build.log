@@ -1,0 +1,126 @@
+04:20:32 **** Incremental Build of configuration Debug for project payment_project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\card.o" "..\\src\\card.c" 
+..\src\card.c: In function 'getCardHolderName':
+..\src\card.c:21:15: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+   21 |          gets(cardHolderName);
+      |               ^~~~~~~~~~~~~~
+      |               |
+      |               uint8 * {aka unsigned char *}
+In file included from ..\src\card.c:1:
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:687:28: note: expected 'char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+  687 |   char *__cdecl gets(char *_Buffer) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+      |                      ~~~~~~^~~~~~~
+..\src\card.c:22:33: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   22 |          cardHolderNameLength = strlen(cardHolderName);
+      |                                 ^~~~~~
+..\src\card.c:3:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    2 | #include"card.h"
+  +++ |+#include <string.h>
+    3 | 
+..\src\card.c:22:33: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   22 |          cardHolderNameLength = strlen(cardHolderName);
+      |                                 ^~~~~~
+..\src\card.c:22:33: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\card.c:22:40: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   22 |          cardHolderNameLength = strlen(cardHolderName);
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        uint8 * {aka unsigned char *}
+..\src\card.c:22:40: note: expected 'const char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c:56:25: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   56 |                         strcpy(cardData->cardHolderName,cardHolderName); //I WIIL SEE Y
+      |                         ^~~~~~
+..\src\card.c:56:25: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\card.c:56:25: warning: incompatible implicit declaration of built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+..\src\card.c:56:25: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\card.c:56:40: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+   56 |                         strcpy(cardData->cardHolderName,cardHolderName); //I WIIL SEE Y
+      |                                ~~~~~~~~^~~~~~~~~~~~~~~~
+      |                                        |
+      |                                        uint8 * {aka unsigned char *}
+..\src\card.c:56:40: note: expected 'char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c:56:57: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+   56 |                         strcpy(cardData->cardHolderName,cardHolderName); //I WIIL SEE Y
+      |                                                         ^~~~~~~~~~~~~~
+      |                                                         |
+      |                                                         uint8 * {aka unsigned char *}
+..\src\card.c:56:57: note: expected 'const char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c: In function 'getCardExpiryDate':
+..\src\card.c:93:10: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+   93 |     gets(cardExpirationDate);
+      |          ^~~~~~~~~~~~~~~~~~
+      |          |
+      |          uint8 * {aka unsigned char *}
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:687:28: note: expected 'char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+  687 |   char *__cdecl gets(char *_Buffer) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+      |                      ~~~~~~^~~~~~~
+..\src\card.c:95:32: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+   95 |     cardExpirationDateLength = strlen(cardExpirationDate);
+      |                                ^~~~~~
+..\src\card.c:95:32: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\card.c:95:39: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+   95 |     cardExpirationDateLength = strlen(cardExpirationDate);
+      |                                       ^~~~~~~~~~~~~~~~~~
+      |                                       |
+      |                                       uint8 * {aka unsigned char *}
+..\src\card.c:95:39: note: expected 'const char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c:109:11: warning: incompatible implicit declaration of built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+  109 |           strcpy(cardData->cardExpirationDate,cardExpirationDate);
+      |           ^~~~~~
+..\src\card.c:109:11: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\card.c:109:26: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  109 |           strcpy(cardData->cardExpirationDate,cardExpirationDate);
+      |                  ~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+      |                          |
+      |                          uint8 * {aka unsigned char *}
+..\src\card.c:109:26: note: expected 'char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c:109:47: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  109 |           strcpy(cardData->cardExpirationDate,cardExpirationDate);
+      |                                               ^~~~~~~~~~~~~~~~~~
+      |                                               |
+      |                                               uint8 * {aka unsigned char *}
+..\src\card.c:109:47: note: expected 'const char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c: In function 'getCardPAN':
+..\src\card.c:142:10: warning: pointer targets in passing argument 1 of 'gets' differ in signedness [-Wpointer-sign]
+  142 |     gets(primaryAccountNumber);
+      |          ^~~~~~~~~~~~~~~~~~~~
+      |          |
+      |          uint8 * {aka unsigned char *}
+c:\mingw\x86_64-w64-mingw32\include\stdio.h:687:28: note: expected 'char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+  687 |   char *__cdecl gets(char *_Buffer) __MINGW_ATTRIB_DEPRECATED_SEC_WARN;
+      |                      ~~~~~~^~~~~~~
+..\src\card.c:145:34: warning: incompatible implicit declaration of built-in function 'strlen' [-Wbuiltin-declaration-mismatch]
+  145 |     primaryAccountNumberLength = strlen(primaryAccountNumber);
+      |                                  ^~~~~~
+..\src\card.c:145:34: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\card.c:145:41: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  145 |     primaryAccountNumberLength = strlen(primaryAccountNumber);
+      |                                         ^~~~~~~~~~~~~~~~~~~~
+      |                                         |
+      |                                         uint8 * {aka unsigned char *}
+..\src\card.c:145:41: note: expected 'const char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c:172:17: warning: incompatible implicit declaration of built-in function 'strcpy' [-Wbuiltin-declaration-mismatch]
+  172 |                 strcpy(cardData->primaryAccountNumber,primaryAccountNumber);
+      |                 ^~~~~~
+..\src\card.c:172:17: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\card.c:172:32: warning: pointer targets in passing argument 1 of 'strcpy' differ in signedness [-Wpointer-sign]
+  172 |                 strcpy(cardData->primaryAccountNumber,primaryAccountNumber);
+      |                        ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+      |                                |
+      |                                uint8 * {aka unsigned char *}
+..\src\card.c:172:32: note: expected 'char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c:172:55: warning: pointer targets in passing argument 2 of 'strcpy' differ in signedness [-Wpointer-sign]
+  172 |                 strcpy(cardData->primaryAccountNumber,primaryAccountNumber);
+      |                                                       ^~~~~~~~~~~~~~~~~~~~
+      |                                                       |
+      |                                                       uint8 * {aka unsigned char *}
+..\src\card.c:172:55: note: expected 'const char *' but argument is of type 'uint8 *' {aka 'unsigned char *'}
+..\src\card.c: In function 'stringToInteger':
+..\src\card.c:207:16: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
+  207 |         RESULT=atoi(TEMP);  /* atoi converts the string to integer*/
+      |                ^~~~
+gcc -o payment_project.exe "src\\card.o" "src\\payment_Application.o" "src\\server.o" "src\\terminal.o" 
+
+04:20:33 Build Finished. 0 errors, 21 warnings. (took 354ms)
+

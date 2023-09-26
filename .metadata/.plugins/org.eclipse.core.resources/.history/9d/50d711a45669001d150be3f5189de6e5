@@ -1,0 +1,49 @@
+#include"card.h"
+
+
+
+uint8 i=0;
+
+
+void getCardHolderName(Card_Data*data_1)
+{
+	printf("Please enter your name:\n");
+for(i=0;i<NAME_SIZE;i++)
+{
+
+scanf("%s",data_1->Name[i]);	//check the syntax
+
+}
+data_1->Name[i-1]='\0';
+
+}
+
+
+void getCardExpiryDate(Card_Data*data_2)
+{
+	printf("Please the expire date:\n");
+	for(i=0;i<DATE_SIZE;i++)
+	{
+	scanf("%d",data_2->Date[i]);	//check the syntax
+
+	}
+
+
+
+
+}
+
+
+
+void getCardPAN(Card_Data*data_3)
+{
+	printf("Please enter PAN:\n");
+	for(i=0;i<PAN_SIZE;i++)
+	{
+	scanf("%d",data_3->PAN[i]);	//check the syntax
+
+	}
+
+
+
+}

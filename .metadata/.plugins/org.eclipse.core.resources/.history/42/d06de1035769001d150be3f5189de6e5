@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : payment_project.c
+ Author      : EL_HASSAN_ABDELMAGED
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "card.h"
+#include "std_types.h"
+int main(void) {
+	setvbuf(stdout, NULL, _IONBF, 0);
+	setvbuf(stderr, NULL, _IONBF, 0);
+	uint8 i;
+	Card_Data X;
+	getCardHolderName(&X);
+	getCardExpiryDate(&X);
+	getCardPAN(&X);
+
+	printf("NAME is  ");
+	for(i=0;i<NAME_SIZE;i++){
+		printf("%s",X.Name);
+	}
+
+	return EXIT_SUCCESS;
+}
